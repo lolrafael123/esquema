@@ -6,9 +6,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Compiled and minified CSS -->
-    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="../css/style.css" />
-    <link type="text/css" rel="stylesheet" href="../css/font-awesome.css" />
+    <link type="text/css" rel="stylesheet" href="../public/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../public/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="../public/css/font-awesome.css" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
@@ -21,7 +21,7 @@
     <nav class="transparent z-depth-0">
         <div class="nav-wrapper">
             <a href="#" class="brand-logo">&nbsp
-                 <img src="..\images\logo.png">
+                 <img src="../public/images/logo.png">
             </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="sass.html">Projeto</a></li>
@@ -59,7 +59,7 @@
                                                     </div>
                                                 </div> <button class="btn btn-large btn-block blue waves-effect waves-light indigo darken-4"
                                                     name=action type=submit>Entrar <i class="material-icons right">send</i></button>                                                &nbsp
-                                                <a class="blue-text text-darken-4" href="#">Esqueceu a senha?</a>
+                                                <a class="red-text text-red" href="#">Esqueceu a senha?</a>
                                         </form>
                                         </div>
                                     </div>
@@ -69,7 +69,7 @@
                 </section>
                 </div>
                 <!-- fim da parte de login -->
-                <div class="parallax"><img src="..\images\logo2.jpg"></div>
+                <div class="parallax"><img src="../public/images/logo2.jpg"></div>
             </div>
 
     </main>
@@ -89,7 +89,7 @@
                 </div>
                 <div class="col s12 m4 l8">
                     <video class="materialboxed container" width="650" controls>
-                        <source src="../media/vídeos/temer.mp4" type="video/mp4">
+                        <source src="../public/media/vídeos/temer.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="col s12 m4 l2">
@@ -130,7 +130,7 @@
 
     <!-- parallax 2 -->
     <div class="parallax-container">
-        <div class="parallax"><img src="../images/pexe4.jpg"></div>
+        <div class="parallax"><img src="../public/images/pexe4.jpg"></div>
     </div>
     <!-- fim do parallax 2 -->
 
@@ -151,7 +151,7 @@
                     <div class="col s4">
                         <div class="card hoverable">
                             <div class="card-image">
-                                <img src="../images/989.jpg">
+                                <img src="../public/images/989.jpg">
                                 <span <a class="btn-floating btn-large halfway-fab red activator"><i class="material-icons">add</i></a></span>
                             </div>
                             <div class="card-content">
@@ -190,7 +190,7 @@
                     <div class="col s4">
                         <div class="card hoverable">
                             <div class="card-image">
-                                <img src="../images/989.jpg">
+                                <img src="../public/images/989.jpg">
                                 <span <a class="btn-floating btn-large halfway-fab red activator"><i class="material-icons">add</i></a></span>
                             </div>
                             <div class="card-content">
@@ -228,7 +228,7 @@
                     <div class="col s4">
                         <div class="card hoverable">
                             <div class="card-image">
-                                <img src="../images/989.jpg">
+                                <img src="../public/images/989.jpg">
                                 <span <a class="btn-floating btn-large halfway-fab red activator"><i class="material-icons">add</i></a></span>
                             </div>
                             <div class="card-content">
@@ -270,7 +270,7 @@
                     <div class="col s4">
                         <div class="card hoverable">
                             <div class="card-image">
-                                <img src="../images/989.jpg">
+                                <img src="../public/images/989.jpg">
                                 <span <a class="btn-floating btn-large halfway-fab red activator"><i class="material-icons">add</i></a></span>
                             </div>
                             <div class="card-content">
@@ -309,7 +309,7 @@
                     <div class="col s4">
                         <div class="card hoverable">
                             <div class="card-image">
-                                <img src="../images/989.jpg">
+                                <img src="../public/images/989.jpg">
                                 <span <a class="btn-floating btn-large halfway-fab red activator"><i class="material-icons">add</i></a></span>
                             </div>
                             <div class="card-content">
@@ -347,7 +347,7 @@
                     <div class="col s4">
                         <div class="card hoverable">
                             <div class="card-image">
-                                <img src="../images/989.jpg">
+                                <img src="../public/images/989.jpg">
                                 <span <a class="btn-floating btn-large halfway-fab red activator"><i class="material-icons">add</i></a></span>
                             </div>
                             <div class="card-content">
@@ -390,7 +390,7 @@
                     <div class="col s4">
                         <div class="card hoverable">
                             <div class="card-image">
-                                <img src="../images/989.jpg">
+                                <img src="../public/images/989.jpg">
                                 <span <a class="btn-floating btn-large halfway-fab red activator"><i class="material-icons">add</i></a></span>
                             </div>
                             <div class="card-content">
@@ -428,7 +428,7 @@
                     <div class="col s4">
                         <div class="card hoverable">
                             <div class="card-image">
-                                <img src="../images/989.jpg">
+                                <img src="../public/images/989.jpg">
                                 <span <a class="btn-floating btn-large halfway-fab red activator"><i class="material-icons">add</i></a></span>
                             </div>
                             <div class="card-content">
@@ -474,7 +474,7 @@
 
     <!-- parallax 3 -->
     <div class="parallax-container">
-        <div class="parallax"><img src="../images/pexe5.jpg"></div>
+        <div class="parallax"><img src="../public/images/pexe5.jpg"></div>
     </div>
 
     <!-- fim parallax 3-->
@@ -484,19 +484,19 @@
             <div class="container">
                 <div class="row">
                     <div class="col s6">
-                        <h2 class="white-text">Contato</h2><br />
+                        <h2 class="white-text">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspContato</h2><br />
                         <div class="row">
-                            <div class="input-field col s4 white-text">
+                            <div class="input-field col s6 white-text">
                                 <input id="" type="text" class="validate">
                                 <label for="">Nome</label>
                             </div>
-                            <div class="input-field col s4 white-text">
+                            <div class="input-field col s6 white-text">
                                 <input id="" type="text" class="validate">
                                 <label for="">Sobrenome</label>
                             </div>
                             <div class="row">
                                 <div class="col s6">
-                                    <div class="input-field col s6 grey-text">
+                                    <div class="input-field col s12 grey-text">
                                         <select>
                                   <option value="" disabled selected>Assunto</option>
                                   <option value="1">Option 1</option>
@@ -527,18 +527,18 @@
                         <label for="textarea1">Mensagem</label><br>
                         <a class="red darken-4 btn-large waves-effect waves-light btn">Enviar</a>
                     </div>
-
-                    <div class="container">
+                </div>
+            </div>
+            <br /><br />
+              <div class="container">
                         <div class="row">
                             <div class="col s6">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.0259519134239!2d-46.95103828801451!3d-22.425118347243867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8f85011dea2dd%3A0x22b471946d92ea48!2sEscola+T%C3%A9cnica+Estadual+Pedro+Ferreira+Alves!5e0!3m2!1spt-BR!2sbr!4v1502994094819"
-                                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    width="1000" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
         </div>
         </div>
         </div>
