@@ -20,18 +20,19 @@
 <body>
     <nav class="transparent z-depth-0">
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">&nbsp
+            <a href="#" class="brand-logo">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                  <img src="../public/images/logo.png">
             </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="sass.html">Projeto</a></li>
                 <li><a href="badges.html">Sobre nós</a></li>
                 <li><a href="collapsible.html">Contato</a></li>
+                <li><a href="register.blade.php" class="waves-effect waves-light btn red hoverable">Registrar-se</a></li
             </ul>
         </div>
     </nav>
 
-
+<br /><br /><br />
     <!-- Parallax e login -->
     <main>
         <div class="parallax-container">
@@ -45,7 +46,7 @@
                         <div class="col l5 offset-l1 m12">
                             <div class="card hoverable top-md animated_delay_1">
                                 <div class="card-content card-spaced">
-                                    <h5 class=no-m-top>Login</h5>
+                                    <h3 class="center">Login</h3>
                                     <div class="row top-md">
                                         <form class="col s12">
                                             <div class=row>
@@ -140,7 +141,9 @@
             <div class="col s4">
             </div>
             <div class="col s4">
-                <h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSobre Nós</h2>
+            <center>
+                <h2>Sobre Nós</h2>
+                </center>
             </div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <div class="col s4">
             </div>
@@ -483,8 +486,10 @@
         <div class="section indigo darken-4">
             <div class="container">
                 <div class="row">
+                <center>
+                        <h2 class="white-text">Contato</h2><br />
+                        </center>
                     <div class="col s6">
-                        <h2 class="white-text">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspContato</h2><br />
                         <div class="row">
                             <div class="input-field col s6 white-text">
                                 <input id="" type="text" class="validate">
