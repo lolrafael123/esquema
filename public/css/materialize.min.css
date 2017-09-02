@@ -2149,8 +2149,18 @@ html {
     -webkit-text-size-adjust: 100%
 }
 
-body {
+body#home {
    background-image: url("../images/back2.jpg");
+    margin: 0
+}
+
+body#register {
+   background-image: url("../images/back3.jpg");
+    margin: 0
+}
+
+body#layout {
+   background-image: url();
     margin: 0
 }
 

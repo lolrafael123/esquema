@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body>
+<body id="home">
     <nav class="transparent z-depth-0">
         <div class="nav-wrapper">
             <a href="#" class="brand-logo">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -27,7 +27,7 @@
                 <li><a href="sass.html">Projeto</a></li>
                 <li><a href="badges.html">Sobre nós</a></li>
                 <li><a href="collapsible.html">Contato</a></li>
-                <li><a href="register.blade.php" class="waves-effect waves-light btn red hoverable">Registrar-se</a></li
+                <li><a href="register.blade.php" class="waves-effect waves-light btn red hoverable">Registrar-se</a></li>
             </ul>
         </div>
     </nav>
