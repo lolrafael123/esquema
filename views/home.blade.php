@@ -18,24 +18,26 @@
 </head>
 
 <body id="home">
-    <nav class="transparent z-depth-0">
+<div class="navbar-fixed">
+    <nav class="transparent z-depth-0" id="navbar">
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="#login" class="brand-logo">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                  <img src="../public/images/logo.png">
             </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html">Projeto</a></li>
-                <li><a href="badges.html">Sobre nós</a></li>
-                <li><a href="collapsible.html">Contato</a></li>
+                <li><a href="#Projeto">Projeto</a></li>
+                <li><a href="#Sobre">Sobre nós</a></li>
+                <li><a href="#Contato">Contato</a></li>
                 <li><a href="register.blade.php" class="waves-effect waves-light btn red hoverable">Registrar-se</a></li>
             </ul>
         </div>
     </nav>
+    </div>
 
 <br /><br /><br />
     <!-- Parallax e login -->
     <main>
-        <div class="parallax-container">
+        <div class="parallax-container scrollspy" id="login">
             <!-- Parte de login -->
             <div class="container">
                 <section class=section-hero>
@@ -79,7 +81,7 @@
 
 
     <!-- vídeo -->
-    <div class="section  red darken-4" id="video">
+    <div class="section  red darken-4 section scrollspy" id="Projeto">
         <div class="container">
             <div class="row">
                 <div class="col s12 m4 l2">
@@ -136,7 +138,7 @@
     <!-- fim do parallax 2 -->
 
     <!-- sobre nós -->
-    <div class="section white">
+    <div class="section white section scrollspy" id="Sobre">
         <div class="row">
             <div class="col s4">
             </div>
@@ -481,9 +483,10 @@
     </div>
 
     <!-- fim parallax 3-->
+
     <!-- contato -->
     <form>
-        <div class="section indigo darken-4">
+        <div class="section indigo darken-4 section scrollspy" id="Contato">
             <div class="container">
                 <div class="row">
                 <center>
@@ -624,8 +627,26 @@
         }];
         Materialize.scrollFire(options);
     </script>
+<!-- fim scrollfire-->
 
-    <!-- fim scrollfire-->
+<!-- scroll-->
+    <script>
+     $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
+        
+    </script>
+
+    <!-- fim scroll-->
+
+    <script>
+
+window.onscroll = () => {
+  const nav = document.querySelector('#navbar');
+  if(this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
+};
+
+    </script>
 </body>
 
 </html>

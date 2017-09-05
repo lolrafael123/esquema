@@ -2422,7 +2422,6 @@ a {
 }
 
 .z-depth-1,
-nav,
 .card-panel,
 .card,
 .toast,
@@ -4060,8 +4059,6 @@ nav ul a span.badge {
 }
 
 nav {
-    color: #fff;
-    background-color: #ee6e73;
     width: 100%;
     height: 56px;
     line-height: 56px
@@ -9136,7 +9133,6 @@ button.picker__close:focus {
     transition: background .5s ease-in-out, opacity .5s ease;
 }
 
-.navbar-fixed {position: absolute;z-index:999999999;} 
 
 /* label focus color */
  .input-field input:focus + label {
@@ -9148,3 +9144,20 @@ button.picker__close:focus {
    box-shadow: 0 1px 0 0 red !important
  }
  
+ 
+
+nav {
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  transition: 0.4s;
+}
+
+
+
+nav.scroll {
+  background-color: #101760;
+}
+
+
+   
