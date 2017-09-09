@@ -18,7 +18,7 @@
 </head>
 
 <body id="layout">
-<!-- test 
+    <!-- test 
     <header>
         <div class="navbar-fixed">
             <nav class="indigo darken-4 top-nav nav">
@@ -42,7 +42,7 @@
             <ul class="side-nav fixed hoverable indigo darken-3">
                 <li class="indigo darken-4 z-depth-2">
                     <div class="row">
-                    <br>
+                        <br>
                         <div class="col s4 m4 l4">
                             <img src="../public/images/989.jpg" alt="" class="circle responsive-img">
                         </div>
@@ -67,26 +67,24 @@
                     <div class="col s12">
                         <form>
                             <center>
-                                <h4 class="white-text">Nova Prova</h4>
+                                <h4 class="white-text">Sobre</h4>
+                                
+                                
+                                <span class="white-text">Desenvolvido pela sala do 3º ano do Ensino Médio. Integrado ao Técnico de Informática em 2017 para
+                                    auxiliar os professores na gestão de provas.</span>
+                                
+                                <a class="waves-effect waves-light btn white-text red" href="https://login.microsoftonline.com" target="_blank">E-mail</a>
+                                <a class="waves-effect waves-light btn white-text red" href="https://nsa.cps.sp.gov.br/" target="_blank">NSA</a>
+                                <a class="waves-effect waves-light btn white-text red" href="http://www.pfalves.com.br/" target="_blank">PFA</a>
                             </center>
-                            <p class="white-text">Data:<input type="date"></p>
-                            <div class="input-field white-text">
-                                <input id="" type="text">
-                                <label for="">Sala</label>
-                            </div>
-                            <div class="input-field white-text">
-                                <input id="" type="text">
-                                <label for="">Diciplina</label>
-                            </div>
-                             
-                            <a class="waves-effect waves-light btn red">Enviar</a>
+
                         </form><br>
                     </div>
                     <div class="col s12 z-depth-5">
                         <form>
-                        <center>
-                            <h4 class="white-text">Contato</h4>
-                        </center>
+                            <center>
+                                <h4 class="white-text">Contato</h4>
+                            </center>
                             <p class="white-text"><i class="material-icons red-text">call</i> (19) 3862-0888 / (19) 3862-0177 </p>
                             <p class="white-text"><i class="material-icons red-text">email</i> Mail@example.com </p>
                             <p class="white-text"><i class="material-icons red-text">home</i> Rua. Ariovaldo Silveira Franco, 237 </p>
@@ -133,6 +131,7 @@
         close: 'Ok',
         closeOnSelect: false // Close upon selecting a date,
     });
+
 </script>
 <!-- fim data-->
 

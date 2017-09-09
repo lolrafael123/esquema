@@ -19,7 +19,7 @@
 
 <body id="home">
 <div class="navbar-fixed">
-    <nav class="transparent z-depth-0" id="navbar">
+    <nav class="transparent z-depth-0 nav" id="navbar">
         <div class="nav-wrapper">
             <a href="#login" class="brand-logo">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                  <img src="../public/images/logo.png">
@@ -639,6 +639,7 @@
 
     <!-- fim scroll-->
 
+<!-- navbar efeito -->
     <script>
 
 window.onscroll = () => {
@@ -647,6 +648,12 @@ window.onscroll = () => {
 };
 
     </script>
+<!-- fim navbar efeito -->
+
+<script>
+$(".button-collapse").sideNav();
+</script>
+
 </body>
 
 </html>
