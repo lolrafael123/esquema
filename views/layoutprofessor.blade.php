@@ -15,34 +15,18 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>VPO -</title>
 </head>
 
 <body id="layout">
-<!-- test 
-    <header>
-        <div class="navbar-fixed">
-            <nav class="indigo darken-4 top-nav nav">
-                <div class="nav-wrapper">
-                    <a href="#" class="brand-logo">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                 <img src="../public/images/logo.png">
-            </a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-
-                    </ul>
-                </div>
-        </div>
-        </nav>
-    </header>
-     -->
-
-    <!-- layout -->
     <div class="wrapper">
         <div class="row">
 
             <ul class="side-nav fixed hoverable indigo darken-3">
                 <li class="indigo darken-4 z-depth-2">
                     <div class="row">
-                    <br>
+                        <br>
                         <div class="col s4 m4 l4">
                             <img src="../public/images/989.jpg" alt="" class="circle responsive-img">
                         </div>
@@ -78,21 +62,24 @@
                                 <input id="" type="text">
                                 <label for="">Diciplina</label>
                             </div>
-                             
+
                             <a class="waves-effect waves-light btn red">Enviar</a>
                         </form><br>
                     </div>
                     <div class="col s12 z-depth-5">
                         <form>
-                        <center>
-                            <h4 class="white-text">Contato</h4>
-                        </center>
+                            <center>
+                                <h4 class="white-text">Contato</h4>
+                            </center>
                             <p class="white-text"><i class="material-icons red-text">call</i> (19) 3862-0888 / (19) 3862-0177 </p>
                             <p class="white-text"><i class="material-icons red-text">email</i> Mail@example.com </p>
                             <p class="white-text"><i class="material-icons red-text">home</i> Rua. Ariovaldo Silveira Franco, 237 </p>
                         </form>
                     </div>
 
+                    <div class="col s9">
+            
+                    </div>
 </body>
 
 <!--Import jQuery before materialize.js-->
@@ -105,21 +92,18 @@
     $('.fixed-action-btn').closeFAB();
     $('.fixed-action-btn.toolbar').openToolbar();
     $('.fixed-action-btn.toolbar').closeToolbar();
-
 </script>
 <!-- fim efeito botão -->
 
 <script>
     $('.dropdown-button').dropdown('open');
     $('.dropdown-button').dropdown('close');
-
 </script>
 <!-- select -->
 <script>
     $(document).ready(function () {
         $('select').material_select();
     });
-
 </script>
 <!-- fim do select -->
 

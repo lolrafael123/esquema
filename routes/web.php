@@ -19,6 +19,9 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/professor', function () {
+    return view('professor');
+});
 
 Auth::routes();
 

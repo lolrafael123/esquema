@@ -18,23 +18,23 @@
 </head>
 
 <body id="home">
-<div class="navbar-fixed">
-    <nav class="transparent z-depth-0 nav" id="navbar">
-        <div class="nav-wrapper">
-            <a href="#login" class="brand-logo">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <div class="navbar-fixed">
+        <nav class="transparent z-depth-0 nav" id="navbar">
+            <div class="nav-wrapper">
+                <a href="#login" class="brand-logo">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                  <img src="../public/images/logo.png">
             </a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#Projeto">Projeto</a></li>
-                <li><a href="#Sobre">Sobre nós</a></li>
-                <li><a href="#Contato">Contato</a></li>
-                <li><a href="register.blade.php" class="waves-effect waves-light btn red hoverable">Registrar-se</a></li>
-            </ul>
-        </div>
-    </nav>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#Projeto">Projeto</a></li>
+                    <li><a href="#Sobre">Sobre nós</a></li>
+                    <li><a href="#Contato">Contato</a></li>
+                    <li><a href="register.blade.php" class="waves-effect waves-light btn red hoverable">Registrar-se</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
 
-<br /><br /><br />
+    <br /><br /><br />
     <!-- Parallax e login -->
     <main>
         <div class="parallax-container scrollspy" id="login">
@@ -143,8 +143,8 @@
             <div class="col s4">
             </div>
             <div class="col s4">
-            <center>
-                <h2>Sobre Nós</h2>
+                <center>
+                    <h2>Sobre Nós</h2>
                 </center>
             </div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <div class="col s4">
@@ -489,9 +489,9 @@
         <div class="section indigo darken-4 section scrollspy" id="Contato">
             <div class="container">
                 <div class="row">
-                <center>
+                    <center>
                         <h2 class="white-text">Contato</h2><br />
-                        </center>
+                    </center>
                     <div class="col s6">
                         <div class="row">
                             <div class="input-field col s6 white-text">
@@ -538,15 +538,15 @@
                 </div>
             </div>
             <br /><br />
-              <div class="container">
-                        <div class="row">
-                            <div class="col s6">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.0259519134239!2d-46.95103828801451!3d-22.425118347243867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8f85011dea2dd%3A0x22b471946d92ea48!2sEscola+T%C3%A9cnica+Estadual+Pedro+Ferreira+Alves!5e0!3m2!1spt-BR!2sbr!4v1502994094819"
-                                    width="1000" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="container">
+                <div class="row">
+                    <div class="col s6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.0259519134239!2d-46.95103828801451!3d-22.425118347243867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8f85011dea2dd%3A0x22b471946d92ea48!2sEscola+T%C3%A9cnica+Estadual+Pedro+Ferreira+Alves!5e0!3m2!1spt-BR!2sbr!4v1502994094819"
+                            width="1000" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-                            </div>
-                        </div>
                     </div>
+                </div>
+            </div>
         </div>
         </div>
         </div>
@@ -627,32 +627,30 @@
         }];
         Materialize.scrollFire(options);
     </script>
-<!-- fim scrollfire-->
+    <!-- fim scrollfire-->
 
-<!-- scroll-->
+    <!-- scroll-->
     <script>
-     $(document).ready(function(){
-    $('.scrollspy').scrollSpy();
-  });
-        
+        $(document).ready(function () {
+            $('.scrollspy').scrollSpy();
+        });
     </script>
 
     <!-- fim scroll-->
 
-<!-- navbar efeito -->
+    <!-- navbar efeito -->
     <script>
+        window.onscroll = () => {
+            const nav = document.querySelector('#navbar');
+            if (this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
+        };
+    </script>
+    <!-- fim navbar efeito -->
 
-window.onscroll = () => {
-  const nav = document.querySelector('#navbar');
-  if(this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
-};
+    <script>
+        $(".button-collapse").sideNav();
 
     </script>
-<!-- fim navbar efeito -->
-
-<script>
-$(".button-collapse").sideNav();
-</script>
 
 </body>
 
