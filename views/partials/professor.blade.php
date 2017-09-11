@@ -6,9 +6,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Compiled and minified CSS -->
-    <link type="text/css" rel="stylesheet" href="../public/css/materialize.min.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="../public/css/style.css" />
-    <link type="text/css" rel="stylesheet" href="../public/css/font-awesome.css" />
+    <link type="text/css" rel="stylesheet" href="../../public/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../../public/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="../../public/css/font-awesome.css" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>

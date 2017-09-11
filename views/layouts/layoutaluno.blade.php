@@ -6,9 +6,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Compiled and minified CSS -->
-    <link type="text/css" rel="stylesheet" href="../public/css/materialize.min.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="../public/css/style.css" />
-    <link type="text/css" rel="stylesheet" href="../public/css/font-awesome.css" />
+    <link type="text/css" rel="stylesheet" href="../../public/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../../public/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="../../public/css/font-awesome.css" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
@@ -18,24 +18,6 @@
 </head>
 
 <body id="layout">
-    <!-- test 
-    <header>
-        <div class="navbar-fixed">
-            <nav class="indigo darken-4 top-nav nav">
-                <div class="nav-wrapper">
-                    <a href="#" class="brand-logo">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                 <img src="../public/images/logo.png">
-            </a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-
-                    </ul>
-                </div>
-        </div>
-        </nav>
-    </header>
-     -->
-
-    <!-- layout -->
     <div class="wrapper">
         <div class="row">
 
@@ -44,7 +26,7 @@
                     <div class="row">
                         <br>
                         <div class="col s4 m4 l4">
-                            <img src="../public/images/989.jpg" alt="" class="circle responsive-img">
+                            <img src="../../public/images/989.jpg" alt="" class="circle responsive-img">
                         </div>
                         <center>
                             <div class="col s12 m8 l8">
@@ -94,8 +76,8 @@
 </body>
 
 <!--Import jQuery before materialize.js-->
-<script type="text/javascript" src="../js/materialize.min.js"></script>
-<script type="text/javascript" src="../js/app.js"></script>
+<script type="text/javascript" src="../../js/materialize.min.js"></script>
+<script type="text/javascript" src="../../js/app.js"></script>
 
 <!-- efeito do botão -->
 <script>
@@ -134,5 +116,4 @@
 
 </script>
 <!-- fim data-->
-
 </html>

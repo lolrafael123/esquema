@@ -18,12 +18,66 @@
 </head>
 
 <body id="home">
+    <!-- preloader -->
+    <div class="preloader-background">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="spinner-layer spinner-red">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+
+            <div class="spinner-layer spinner-yellow">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+
+            <div class="spinner-layer spinner-green">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- fim preloader -->
     <div class="navbar-fixed">
         <nav class="transparent z-depth-0 nav" id="navbar">
             <div class="nav-wrapper">
                 <a href="#login" class="brand-logo">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                  <img src="../public/images/logo.png">
             </a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="#Projeto">Projeto</a></li>
                     <li><a href="#Sobre">Sobre nós</a></li>
@@ -31,6 +85,12 @@
                     <li><a href="register.blade.php" class="waves-effect waves-light btn red hoverable">Registrar-se</a></li>
                 </ul>
             </div>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="#Projeto">Projeto</a></li>
+                <li><a href="#Sobre">Sobre nós</a></li>
+                <li><a href="#Contato">Contato</a></li>
+                <li><a href="register.blade.php" class="waves-effect waves-light btn red hoverable">Registrar-se</a></li>
+            </ul>
         </nav>
     </div>
 
@@ -648,8 +708,19 @@
     <!-- fim navbar efeito -->
 
     <script>
-        $(".button-collapse").sideNav();
+        $(document).ready(function () {
+            $(".button-collapse").sideNav();
+        });
+    </script>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            $('.preloader-background').delay(1700).fadeOut('slow');
+
+            $('.preloader-wrapper')
+                .delay(1700)
+                .fadeOut();
+        });
     </script>
 
 </body>

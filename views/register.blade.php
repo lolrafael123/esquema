@@ -17,6 +17,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body id="register">
+  <!-- preloader -->
+    <div class="preloader-background">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="spinner-layer spinner-red">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+
+            <div class="spinner-layer spinner-yellow">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+
+            <div class="spinner-layer spinner-green">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- fim preloader -->
   <div class="row">
   <br />
   <div class="col s4 offset-s4">
@@ -125,6 +178,15 @@
         });
     </script>
     <!-- fim do select -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            $('.preloader-background').delay(800).fadeOut('slow');
+
+            $('.preloader-wrapper')
+                .delay(800)
+                .fadeOut();
+        });
+    </script>
 
 </body>
 
