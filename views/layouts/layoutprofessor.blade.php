@@ -15,6 +15,7 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
 
     <title>VPO -</title>
 </head>
@@ -54,6 +55,10 @@
                                     <h4 class="white-text">Nova Prova</h4>
                                 </center>
                                 <p class="white-text">Data:<input type="date"></p>
+                                <div class="input-field white-text">
+                                    <input id="" type="text">
+                                    <label for="">Título</label>
+                                </div>
                                 <div class="input-field white-text">
                                     <input id="" type="text">
                                     <label for="">Sala</label>

@@ -2151,7 +2151,8 @@ html {
 
 body#home {
    background-image: url("../images/back2.jpg");
-    margin: 0
+    margin: 0;
+
 }
 
 body#register {
