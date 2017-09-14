@@ -23,10 +23,11 @@
     <div class="section indigo darken-4">
         
     </div>
+
 <div class="col s12">
     <div class="section indigo darken-3">
- <nav>
-    <div class="nav-wrapper">
+  <nav>
+    <div class="nav-wrapper right">
       <form>
         <div class="input-field">
           <input id="search" type="search" required>
@@ -36,15 +37,16 @@
       </form>
     </div>
   </nav>
-    </div>    
-</div>
+    </div>
+    
+        <br><br>
     <div class="row">
 
       <div class="col s3">
         
       </div>
     <div class="col s9">
-        <table class="striped">
+        <table class="striped bordered ">
             <thead>
                 <tr>
                     <th>Código</th>
@@ -54,7 +56,7 @@
             </thead>
 
             <tbody>
-                <tr>
+                <tr class="cyan lighten-5">
                     <td>001</td>
                     <td>18/06/2017</td>
                     <td>Encerrada</td>
@@ -65,7 +67,7 @@
                     <td>Aberta &nbsp<a class="waves-effect waves-light btn-floating indigo modal-trigger" href=""><i class="large material-icons">remove_red_eye</i></a>
                         &nbsp<a class="waves-effect waves-light btn-floating red modal-trigger" href="#modal1"><i class="large material-icons">clear</i></a></td>
                 </tr>
-                <tr>
+                <tr class="cyan lighten-5">
                     <td>003</td>
                     <td>27/05/2017</td>
                     <td>Aberta &nbsp<a class="waves-effect waves-light btn-floating indigo modal-trigger" href=""><i class="large material-icons">remove_red_eye</i></a>
@@ -95,6 +97,7 @@
             $('.modal').modal();
         });
     </script>
+
 </body>
 
 </html>
