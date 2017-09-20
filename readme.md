@@ -1,14 +1,40 @@
-## Entregar
+# laravel-crud
+Complete Laravel 5.3 CRUD with Authentification
 
-- Criação sistema login (Luiz G. e Pedro)
-    - Cadastro Usuário prof, aluno;
-    - Permissions nas páginas e do admin. (falta)
-- Cores do Site (Brunna, Duda, Anna J. e Gabriel B.)
-- Pesquisar imagens para o site e texto da páginas; (Brunna, Duda)
-- Design Home; (Rafael A.)
-    - Arrumar os detalhes, links etc.
-- Design Contato e Sobre nós; (Pedro H. e Rafael)
-- Banco de dados, modelagem (Nicolas);
+## Demo : 
+https://demo.halimlardjane.com/laravel-crud
 
-Obs: falta integrar php com design.
-Ps: Até o dia 05/09 estará tudo pronto e organizado!!!
+**The access infos:**
+
+Email address: admin@gmail.com
+
+Password: 123456
+
+
+
+![alt tag](https://github.com/halimus/laravel-crud/blob/master/public/images/mpd2.jpg)
+
+
+Very nice example for everybody who is beginner in Laravel like me ;)
+
+first thing :
+
+###Step 1 : Use Composer to install dependencies
+
+    cd /path/to/laravel-crud
+
+    composer install
+    
+###Step 2: Create Database
+   Create Database in Your local MySQL (choose name), And configure that name in your .env file.
+   
+###Step 3 Run migrations
+
+    >php artisan migrate
+
+###Start Accessing the Demo
+
+
+
+
+
