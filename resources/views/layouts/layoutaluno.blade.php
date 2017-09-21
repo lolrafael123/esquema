@@ -2,23 +2,26 @@
 <html>
 
 <head>
+
+    <title>VPO - @yield('title')</title>
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Compiled and minified CSS -->
-    <link type="text/css" rel="stylesheet" href="../../../public/css/materialize.min.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="../../../public/css/style.css" />
-    <link type="text/css" rel="stylesheet" href="../../../public/css/font-awesome.css" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.css" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
 </head>
 
 <body id="layout">
+@section('sidebar')
     <div class="wrapper">
         <div class="row">
 
@@ -27,7 +30,7 @@
                     <div class="row">
                         <br>
                         <div class="col s4 m4 l4">
-                            <img src="../../../public/images/989.jpg" alt="" class="circle responsive-img">
+                            <img src="images/989.jpg" alt="" class="circle responsive-img">
                         </div>
                         <center>
                             <div class="col s12 m8 l8">
@@ -51,11 +54,11 @@
                         <form>
                             <center>
                                 <h4 class="white-text">Sobre</h4>
-                                
-                                
+
+
                                 <span class="white-text">Desenvolvido pela sala do 3º ano do Ensino Médio. Integrado ao Técnico de Informática em 2017 para
                                     auxiliar os professores na gestão de provas.</span>
-                                
+
                                 <a class="waves-effect waves-light btn white-text red" href="https://login.microsoftonline.com" target="_blank">E-mail</a>
                                 <a class="waves-effect waves-light btn white-text red" href="https://nsa.cps.sp.gov.br/" target="_blank">NSA</a>
                                 <a class="waves-effect waves-light btn white-text red" href="http://www.pfalves.com.br/" target="_blank">PFA</a>
@@ -74,11 +77,24 @@
                         </form>
                     </div>
 
+           <div class="col s12">
+         @yield('indigo')
+        </div>
+            <div class="row">
+<div class="col s3"></div>
+
+             @show
+             <div class="col s9">
+            @yield('content')
+            </div>
+</div>
+            
+
 </body>
 
 <!--Import jQuery before materialize.js-->
-<script type="text/javascript" src="../../../js/materialize.min.js"></script>
-<script type="text/javascript" src="../../../js/app.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 
 <!-- efeito do botão -->
 <script>
@@ -117,4 +133,5 @@
 
 </script>
 <!-- fim data-->
+
 </html>

@@ -1,14 +1,24 @@
-@extends('layouts.layoutprofessor')
+<!DOCTYPE html>
+<html>
 
-@section('title', 'Professor')
+<head>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="../../../public/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../../../public/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="../../../public/css/font-awesome.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
 
-@section('sidebar')
-    @parent
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+</head>
 
-   
-@endsection
-
-@section('indigo')
+<body>
 <div class="col s12">
     <div class="section indigo darken-4">
         
@@ -29,11 +39,14 @@
   </nav>
     </div>
     
-        <br><br><br>
-@endsection
+        <br><br>
+    <div class="row">
 
-@section('content')
-    <table class="striped bordered ">
+      <div class="col s3">
+        
+      </div>
+    <div class="col s9">
+        <table class="striped bordered ">
             <thead>
                 <tr>
                     <th>Código</th>
@@ -43,7 +56,7 @@
             </thead>
 
             <tbody>
-                <tr class="blue lighten-4">
+                <tr class="cyan lighten-5">
                     <td>001</td>
                     <td>18/06/2017</td>
                     <td>Encerrada</td>
@@ -54,7 +67,7 @@
                     <td>Aberta &nbsp<a class="waves-effect waves-light btn-floating indigo modal-trigger" href=""><i class="large material-icons">remove_red_eye</i></a>
                         &nbsp<a class="waves-effect waves-light btn-floating red modal-trigger" href="#modal1"><i class="large material-icons">clear</i></a></td>
                 </tr>
-                <tr class="blue lighten-4">
+                <tr class="cyan lighten-5">
                     <td>003</td>
                     <td>27/05/2017</td>
                     <td>Aberta &nbsp<a class="waves-effect waves-light btn-floating indigo modal-trigger" href=""><i class="large material-icons">remove_red_eye</i></a>
@@ -63,12 +76,11 @@
             </tbody>
         </table>
 
+    </div>
 
-@endsection
-
-@section('encerrar')
-<div id="modal1" class="modal">
-     <div class="modal-content">
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
             <h4>Encerrar Prova?</h4>
             <p>Você tem certeza que gostaria de encerrar essa prova?</p>
         </div>
@@ -76,13 +88,16 @@
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Não</a>
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Sim</a>
         </div>
-</div>
-      
- <script>
+        
+    </div>
+
+    <script>
         $(document).ready(function () {
             // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
             $('.modal').modal();
         });
-   </script>
-       
-@endsection
+    </script>
+
+</body>
+
+</html>

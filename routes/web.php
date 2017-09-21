@@ -82,3 +82,12 @@ Route::delete('users/{id}', 'UsersController@destroy');
 
 Route::get('users/{id}/reset_password', 'UsersController@reset_password');
 Route::patch('users/{id}/reset_password', 'UsersController@update_password');
+
+Route::get('professor', function () {
+    return view('partials.professor');
+});
+
+Route::get('aluno', function () {
+    return view('partials.aluno');
+});
+
