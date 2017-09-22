@@ -84,7 +84,7 @@ Route::get('users/{id}/reset_password', 'UsersController@reset_password');
 Route::patch('users/{id}/reset_password', 'UsersController@update_password');
 
 Route::get('professor', function () {
-    return view('partials.exemploprof');
+    return view('partials.professor');
 });
 
 Route::get('aluno', function () {
