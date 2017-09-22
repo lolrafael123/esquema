@@ -1,4 +1,10 @@
-@extends('layouts.layoutprofessor') @section('title', 'Professor') @section('sidebar') @parent @endsection @section('indigo')
+@extends('layouts.layoutprofessor') 
+@section('title', 'Professor') 
+@section('sidebar') 
+@parent 
+@endsection
+
+ @section('indigo')
 <div class="col s12">
     <div class="section indigo darken-4">
 
@@ -19,7 +25,9 @@
             </nav>
         </div>
 
-        <br><br><br> @endsection @section('content')
+        <br><br><br> @endsection 
+        
+        @section('content')
         
             <div class="row">
                 <div class="input-field col s4">

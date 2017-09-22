@@ -4,7 +4,7 @@
 @section('conteudo')
     <table class="striped bordered ">
         <thead>
-            <tr>
+            <tr class="white">
                 <th>Código</th>
                 <th>Data</th>
                 <th>Situação</th>
@@ -17,7 +17,7 @@
                 <td>18/06/2017</td>
                 <td>Encerrada</td>
             </tr>
-            <tr>
+            <tr class="white">
                 <td>002</td>
                 <td>18/05/2017</td>
                 <td>Aberta &nbsp<a class="waves-effect waves-light btn-floating indigo modal-trigger" href=""><i class="large material-icons">remove_red_eye</i></a>
