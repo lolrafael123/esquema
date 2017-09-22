@@ -15,10 +15,11 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
 </head>
+
 <body id="register">
-  <!-- preloader -->
+    <!-- preloader -->
     <div class="preloader-background">
         <div class="preloader-wrapper big active">
             <div class="spinner-layer spinner-blue">
@@ -71,77 +72,77 @@
     </div>
 
     <!-- fim preloader -->
-  <div class="row">
-  <br />
-  <div class="col s4 offset-s4">
-  <center>
-   <a href="home.blade.php">
-  <img src="../../public/images/logos.png">
-  </a>
-  </center>
-  </div>
-    <div class="col s4 offset-s4 card-panel">
-      <form>
-      <center>
-        <div class="row">
-          <div class="input-field col s12 center">
-            <h4>Registro</h4>
-            <p class="center">Cadastre-se como aluno ou professor!</p>
-          </div>
+    <div class="row">
+        <br />
+        <div class="col s4 offset-s4">
+            <center>
+                <a href="home.blade.php">
+                    <img src="../../public/images/logos.png">
+                </a>
+            </center>
         </div>
-        </center>
-        <div class="row">
-          <div class="input-field col s12">
-            <i class="material-icons prefix">person_outline</i>
-            <input id="icon_prefix" type="text" class="validate">
-            <label>Username</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <i class="material-icons prefix">mail_outline</i>
-            <input id="email" type="email" class="validate">
-            <label for="email" data-error="Incorreto!" data-success="Certo!">Email</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-          <i class="material-icons prefix">vpn_key</i>
-            <input id="password" type="password">
-            <label>Senha</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-          <i class="material-icons prefix">vpn_key</i>
-            <input id="password-again" type="password">
-            <label >Confirme sua Senha</label>
-          </div>
-        </div>
-        <div class="row">
-        <div class="input-field col s12">
-        <i class="material-icons prefix">supervisor_account</i>
-    <select>
+        <div class="col s4 offset-s4 card-panel">
+            <form>
+                <center>
+                    <div class="row">
+                        <div class="input-field col s12 center">
+                            <h4>Registro</h4>
+                            <p class="center">Cadastre-se como aluno ou professor!</p>
+                        </div>
+                    </div>
+                </center>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">person_outline</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label>Username</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">mail_outline</i>
+                        <input id="email" type="email" class="validate">
+                        <label for="email" data-error="Incorreto!" data-success="Certo!">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">vpn_key</i>
+                        <input id="password" type="password">
+                        <label>Senha</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">vpn_key</i>
+                        <input id="password-again" type="password">
+                        <label>Confirme sua Senha</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">supervisor_account</i>
+                        <select>
     <option value="" disabled selected>Você é Aluno ou Professor?</option>
       <option value="1">Aluno</option>
       <option value="2">Professor</option>
     </select>
-  </div>
-  </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <a href="index.html" class="btn waves-effect waves-light col s12 indigo darken-4">Registrar!</a>
-          </div>
-          <div class="input-field col s12">
-            <p class="margin center medium-small sign-up">Já possui uma conta? <a class="red-text" href="home.blade.php">Login</a></p>
-          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <a href="index.html" class="btn waves-effect waves-light col s12 indigo darken-4">Registrar!</a>
+                    </div>
+                    <div class="input-field col s12">
+                        <p class="margin center medium-small sign-up">Já possui uma conta? <a class="red-text" href="home.blade.php">Login</a></p>
+                    </div>
+                </div>
+            </form>
         </div>
-      </form>
     </div>
-  </div>
-</center>
-<br /><br>
-   <!-- rodapé -->
+    </center>
+    <br /><br>
+    <!-- rodapé -->
     <footer class="page-footer  red darken-4">
         <div class="container">
             <div class="row">
@@ -168,11 +169,11 @@
         </div>
     </footer>
     <!-- fim do rodapé-->
- <!--Import jQuery before materialize.js-->
+    <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="../../js/materialize.min.js"></script>
     <script type="text/javascript" src="../../js/app.js"></script>
 
-     <!-- select -->
+    <!-- select -->
     <script>
         $(document).ready(function () {
             $('select').material_select();

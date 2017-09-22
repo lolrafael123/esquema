@@ -91,3 +91,7 @@ Route::get('aluno', function () {
     return view('partials.aluno');
 });
 
+Route::get('formprof', function () {
+    return view('partials.professorform');
+});
+
