@@ -68,39 +68,51 @@
 @endsection
 
 @section('conteudo')
+<div class="row">
+        <div class="input-field col s4">
+            <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+            <label for="disabled">Diciplina</label>
+        </div>
+        <div class="input-field col s4">
+            <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+            <label for="disabled">Data</label>
+        </div>
+        <div class="input-field col s4">
+            <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+            <label for="disabled">Sala</label>
+        </div>
+    </div>
     <table class="striped bordered ">
         <thead>
             <tr class="white">
-                <th>Código</th>
-                <th>Data</th>
-                <th>Situação</th>
+                <th>Aluno</th>
+                <th>Conceito</th>
+                <th>Ciência</th>
             </tr>
         </thead>
 
         <tbody>
             <tr class="blue lighten-4">
-                <td>001</td>
-                <td>18/06/2017</td>
+                <td>José</td>
+                <td>MB</td>
                 <td>Encerrada</td>
             </tr>
             <tr class="white">
-                <td>002</td>
-                <td>18/05/2017</td>
-                <td>Aberta &nbsp<a class="waves-effect waves-light btn-floating indigo modal-trigger" href=""><i class="large material-icons">remove_red_eye</i></a>
-                    &nbsp<a class="waves-effect waves-light btn-floating red modal-trigger" href="#modal1"><i class="large material-icons">clear</i></a></td>
+                <td>João</td>
+                <td>R</td>
+                <td>Encerrada</td>
             </tr>
             <tr class="blue lighten-4">
-                <td>003</td>
-                <td>27/05/2017</td>
-                <td>Aberta &nbsp<a class="waves-effect waves-light btn-floating indigo modal-trigger" href=""><i class="large material-icons">remove_red_eye</i></a>
-                    &nbsp<a class="waves-effect waves-light btn-floating red modal-trigger" href="#modal1"><i class="large material-icons">clear</i></a></a></td></td>
+                <td>Maria</td>
+                <td>I</td>
+                <td>Encerrada</td>
             </tr>
         </tbody>
-    </table>
+    </table><br />
+    <a class="waves-effect waves-light btn blue rigth">Salvar</a> &nbsp<a class="waves-effect waves-light btn red rigth">Encerrar</a>
 
 
-
-<div id="modal1" class="modal">
+<!-- <div id="modal1" class="modal">
     <div class="modal-content">
         <h4>Encerrar Prova?</h4>
         <p>Você tem certeza que gostaria de encerrar essa prova?</p>
@@ -116,6 +128,6 @@
         // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
         $('.modal').modal();
     });
-</script>
+</script>-->
 
 @endsection

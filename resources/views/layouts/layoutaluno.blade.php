@@ -21,74 +21,39 @@
 </head>
 
 <body id="layout">
-@section('sidebar')
-    <div class="wrapper">
-        <div class="row">
+    <div class="col s12">
+        <div class="section indigo darken-4"></div>
+    </div>
 
-            <ul class="side-nav fixed hoverable indigo darken-3">
-                <li class="indigo darken-4 z-depth-2">
-                    <div class="row">
-                        <br>
-                        <div class="col s4 m4 l4">
-                            <img src="images/989.jpg" alt="" class="circle responsive-img">
+
+    <div class="col s12">
+        <div class="section indigo darken-3">
+            <nav>
+                <div class="nav-wrapper right">
+                    <form>
+                        <div class="input-field">
+                            <input id="search" type="search" required>
+                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
                         </div>
-                        <center>
-                            <div class="col s12 m8 l8">
-
-                                <!-- Dropdown Structure -->
-                                <ul id='dropdown1' class='dropdown-content'>
-                                    <li><a href="#"><i class="material-icons indigo-text text-darken-4">face</i> Perfil</a>
-                                    </li>
-                                    <li><a href="#"><i class="material-icons indigo-text text-darken-4">keyboard_tab</i> Sair</a>
-                                    </li>
-
-                                </ul>
-                                <!-- Dropdown Trigger -->
-                                <a class='dropdown-button btn red col s12' href='#' data-activates='dropdown1'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRafael<i class="material-icons right">arrow_drop_down</i></a>
-
-                                <p class="white-text">Professor</p>
-                            </div>
-                        </center>
-                    </div>
-                    <div class="col s12">
-                        <form>
-                            <center>
-                                <h4 class="white-text">Sobre</h4>
-
-
-                                <span class="white-text">Desenvolvido pela sala do 3º ano do Ensino Médio. Integrado ao Técnico de Informática em 2017 para
-                                    auxiliar os professores na gestão de provas.</span>
-
-                                <a class="waves-effect waves-light btn white-text red" href="https://login.microsoftonline.com" target="_blank">E-mail</a>
-                                <a class="waves-effect waves-light btn white-text red" href="https://nsa.cps.sp.gov.br/" target="_blank">NSA</a>
-                                <a class="waves-effect waves-light btn white-text red" href="http://www.pfalves.com.br/" target="_blank">PFA</a>
-                            </center>
-
-                        </form><br>
-                    </div>
-                    <div class="col s12 z-depth-5">
-                        <form>
-                            <center>
-                                <h4 class="white-text">Contato</h4>
-                            </center>
-                            <p class="white-text"><i class="material-icons red-text">call</i> (19) 3862-0888 / (19) 3862-0177 </p>
-                            <p class="white-text"><i class="material-icons red-text">email</i> Mail@example.com </p>
-                            <p class="white-text"><i class="material-icons red-text">home</i> Rua. Ariovaldo Silveira Franco, 237 </p>
-                        </form>
-                    </div>
-
-           <div class="col s12">
-         @yield('indigo')
+                    </form>
+                </div>
+            </nav>
         </div>
-            <div class="row">
-<div class="col s3"></div>
+    </div>
 
-             @show
-             <div class="col s9">
+    <div class="wrapper">
+        @yield('nav')
+    </div>
+
+    <div class="row">
+        <div class="col s3"></div>
+
+        <div class="col s9">
             @yield('content')
-            </div>
-</div>
-            
+        </div>
+    </div>
+
 
 </body>
 
@@ -102,21 +67,18 @@
     $('.fixed-action-btn').closeFAB();
     $('.fixed-action-btn.toolbar').openToolbar();
     $('.fixed-action-btn.toolbar').closeToolbar();
-
 </script>
 <!-- fim efeito botão -->
 
 <script>
     $('.dropdown-button').dropdown('open');
     $('.dropdown-button').dropdown('close');
-
 </script>
 <!-- select -->
 <script>
     $(document).ready(function () {
         $('select').material_select();
     });
-
 </script>
 <!-- fim do select -->
 
@@ -130,7 +92,6 @@
         close: 'Ok',
         closeOnSelect: false // Close upon selecting a date,
     });
-
 </script>
 <!-- fim data-->
 

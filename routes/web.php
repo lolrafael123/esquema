@@ -95,3 +95,7 @@ Route::get('formprof', function () {
     return view('partials.professorform');
 });
 
+Route::get('professor2', function () {
+    return view('partials.professor2');
+});
+
