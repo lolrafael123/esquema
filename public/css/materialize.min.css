@@ -2161,7 +2161,7 @@ body#register {
 }
 
 body#layout {
-   background-image: url();
+   background-image: url("../images/red.jpg");
     margin: 0
 }
 

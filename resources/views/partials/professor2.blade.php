@@ -71,15 +71,15 @@
 <div class="row">
         <div class="input-field col s4">
             <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-            <label for="disabled">Diciplina</label>
+            <label for="disabled"class="red-text">Diciplina</label>
         </div>
         <div class="input-field col s4">
             <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-            <label for="disabled">Data</label>
+            <label for="disabled"class="red-text">Data</label>
         </div>
         <div class="input-field col s4">
             <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-            <label for="disabled">Sala</label>
+            <label for="disabled" class="red-text">Sala</label>
         </div>
     </div>
     <table class="striped bordered ">
@@ -109,8 +109,9 @@
             </tr>
         </tbody>
     </table><br />
+    <div class="col s4 offset-s8">
     <a class="waves-effect waves-light btn blue ">Salvar</a> &nbsp<a class="waves-effect waves-light btn red" href="/professor">Encerrar</a>
-    
+    </div>
 
 <!-- <div id="modal1" class="modal">
     <div class="modal-content">

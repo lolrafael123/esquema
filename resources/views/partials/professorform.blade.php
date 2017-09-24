@@ -116,7 +116,11 @@
             <label for="">Confirme novo E-mail</label>
         </div>
     </div>
-
+<div class="row">
+<div class="col s6">
+<img class="responsive-img hoverable" src="images/989.jpg">
+</div>
+</div>
     <form action="#">
         <div class="file-field input-field col s6">
             <div class="btn indigo">
@@ -128,5 +132,9 @@
             </div>
         </div>
     </form>
-
+     <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red" href="/professor">
+      <i class="large material-icons">arrow_back</i>
+    </a>
+   
     @endsection
