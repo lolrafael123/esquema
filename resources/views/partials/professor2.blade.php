@@ -109,8 +109,8 @@
             </tr>
         </tbody>
     </table><br />
-    <a class="waves-effect waves-light btn blue rigth">Salvar</a> &nbsp<a class="waves-effect waves-light btn red rigth">Encerrar</a>
-
+    <a class="waves-effect waves-light btn blue ">Salvar</a> &nbsp<a class="waves-effect waves-light btn red" href="/professor">Encerrar</a>
+    
 
 <!-- <div id="modal1" class="modal">
     <div class="modal-content">

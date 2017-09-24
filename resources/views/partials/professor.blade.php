@@ -86,13 +86,13 @@
             <tr class="white">
                 <td>002</td>
                 <td>18/05/2017</td>
-                <td>Aberta &nbsp<a class="waves-effect waves-light btn-floating indigo modal-trigger" href=""><i class="large material-icons">remove_red_eye</i></a>
+                <td>Aberta &nbsp<a class="waves-effect waves-light btn-floating indigo modal-trigger" href="/professor2"><i class="large material-icons">remove_red_eye</i></a>
                     &nbsp<a class="waves-effect waves-light btn-floating red modal-trigger" href="#modal1"><i class="large material-icons">clear</i></a></td>
             </tr>
             <tr class="blue lighten-4">
                 <td>003</td>
                 <td>27/05/2017</td>
-                <td>Aberta &nbsp<a class="waves-effect waves-light btn-floating indigo modal-trigger" href=""><i class="large material-icons">remove_red_eye</i></a>
+                <td>Aberta &nbsp<a class="waves-effect waves-light btn-floating indigo modal-trigger" href="/professor2"><i class="large material-icons">remove_red_eye</i></a>
                     &nbsp<a class="waves-effect waves-light btn-floating red modal-trigger" href="#modal1"><i class="large material-icons">clear</i></a></a></td></td>
             </tr>
         </tbody>
