@@ -71,7 +71,7 @@
                         <td>MB</td>
                         <td>
                             <p>
-                                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+                                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Vistar</a>
                             </p>
                         </td>
                     </tr>
@@ -81,7 +81,8 @@
                         <td>I</td>
                         <td>
                             <p>
-                                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+                                <input type="checkbox" id="test7" checked="checked" disabled="disabled" />
+                                <label for="test7">Visto</label>
                             </p>
                         </td>
                     </tr>
@@ -91,7 +92,7 @@
                         <td>B</td>
                         <td>
                             <p>
-                                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+                                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Vistar</a>
                             </p>
                         </td>
                     </tr>
@@ -103,16 +104,16 @@
                     <h4>
                         <center>Digite o código de confirmação:</center>
                     </h4>
-                    <input type="text" name="" value="" />
+                    <input type="text" name="" value="" placeholder="Digite o código aqui" />
                 </div>
                 <div class="modal-footer">
-                    <a href="#modal2" class="modal-action modal-close waves-effect waves-green btn-flat left ">Não sei o código de confirmação</a>
+                    <a href="#modal2" class="modal-action modal-close waves-effect waves-green btn-flat left modal-trigger ">Não sei o código de confirmação</a>
                     <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Confirmar</a>
                 </div>
             </div>
 
-            <!-- Modal Structure -->
-            <div id="modal2" class="modal modal-fixed-footer">
+            <!-- Modal Structure-->
+            <div id="modal2" class="modal bottom-sheet">
                 <div class="modal-content">
                     <h4>Modal Header</h4>
                     <p>A bunch of text</p>
