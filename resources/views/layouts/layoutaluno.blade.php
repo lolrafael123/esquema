@@ -8,12 +8,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Compiled and minified CSS -->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
-    <link type="text/css" rel="stylesheet" href="css/font-awesome.css" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
+    <link type="text/css" rel="stylesheet" href="{{asset('css/materialize.min.css')}}" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="{{asset('css/style.css')}}" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -57,32 +56,32 @@
 
 </body>
 
-<!--Import jQuery before materialize.js-->
+<!--Import jQuery before materialize.js
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 
-<!-- efeito do botão -->
+<!--Import jQuery before materialize.js
 <script>
     $('.fixed-action-btn').openFAB();
     $('.fixed-action-btn').closeFAB();
     $('.fixed-action-btn.toolbar').openToolbar();
     $('.fixed-action-btn.toolbar').closeToolbar();
 </script>
-<!-- fim efeito botão -->
+
 
 <script>
     $('.dropdown-button').dropdown('open');
     $('.dropdown-button').dropdown('close');
 </script>
-<!-- select -->
+
 <script>
     $(document).ready(function () {
         $('select').material_select();
     });
 </script>
-<!-- fim do select -->
 
-<!-- data -->
+
+
 <script>
     $('.datepicker').pickadate({
         selectMonths: true, // Creates a dropdown to control month
@@ -93,6 +92,14 @@
         closeOnSelect: false // Close upon selecting a date,
     });
 </script>
-<!-- fim data-->
+-->
 
+<script>
+        $(document).ready(function () {
+            // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+            $('.modal').modal();
+
+            $('select').material_select();
+        });
+    </script>
 </html>

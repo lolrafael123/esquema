@@ -79,17 +79,17 @@
 
     <div class="row">
         <div class="input-field col s3">
-            <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+            <input disabled value="Não editável" id="disabled" type="text" class="validate">
             <label for="disabled">Nome</label>
         </div>
         <div class="input-field col s3">
-            <input disabled value="I am not editable" id="disabled" type="password" class="validate">
+            <input disabled value="Não editável" id="disabled" type="password" class="validate">
             <label for="disabled">Senha</label>
         </div>
     </div>
     <div class="row">
         <div class="input-field col s6">
-            <input disabled value="I am not editable" id="disabled" type="email" class="validate">
+            <input disabled value="Não editável" id="disabled" type="email" class="validate">
             <label for="disabled">E-mail</label>
         </div>
     </div>
