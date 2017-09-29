@@ -1,4 +1,6 @@
-@extends('layouts.layoutprofessor') @section('nav')
+@extends('layouts.layoutaluno') 
+
+@section('nav')
 <div class="row">
 
     <ul class="side-nav fixed hoverable indigo darken-3">
@@ -19,43 +21,27 @@
                             </li>
 
                         </ul>
-
                         <!-- Dropdown Trigger -->
                         <a class='dropdown-button btn red col s12' href='#' data-activates='dropdown1'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRafael<i class="material-icons right">arrow_drop_down</i></a>
 
-                        <p class="white-text">Professor</p>
+                        <p class="white-text">Aluno</p>
                     </div>
                 </center>
             </div>
             <div class="col s12">
                 <form>
                     <center>
-                        <h4 class="white-text">Nova Prova</h4>
+                        <h4 class="white-text">Sobre</h4>
+
+
+                        <span class="white-text">Desenvolvido pela sala do 3º ano do Ensino Médio. Integrado ao Técnico de Informática em 2017 para
+                                    auxiliar os professores na gestão de provas.</span>
+
+                        <a class="waves-effect waves-light btn white-text red" href="https://login.microsoftonline.com" target="_blank">E-mail</a>
+                        <a class="waves-effect waves-light btn white-text red" href="https://nsa.cps.sp.gov.br/" target="_blank">NSA</a>
+                        <a class="waves-effect waves-light btn white-text red" href="http://www.pfalves.com.br/" target="_blank">PFA</a>
                     </center>
-                    <p class="white-text col s12">Data:<input type="date"></p>
-                    <div class="input-field col s12 white-text">
-                        <input id="" type="text">
-                        <label for="">Título</label>
-                    </div>
-                    <div class="input-field col s12 grey-text">
-                        <select>
-                            <option value="" disabled selected>Sala</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                        </select>
 
-                    </div>
-                    <div class="input-field col s12 grey-text">
-                        <select>
-                            <option value="" disabled selected>Diciplina</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                        </select>
-                    </div>
-
-                    <a class="waves-effect waves-light btn red">Enviar</a>
                 </form><br>
             </div>
             <div class="col s12 z-depth-5">
@@ -67,12 +53,9 @@
                     <p class="white-text"><i class="material-icons red-text">email</i> Mail@example.com </p>
                     <p class="white-text"><i class="material-icons red-text">home</i> Rua. Ariovaldo Silveira Franco, 237 </p>
                 </form>
-
             </div>
-        </li>
-    </ul>
-</div>
-@endsection @section('conteudo')
+
+@endsection @section('content')
 <div class="row">
 
     <div class="row">
@@ -136,7 +119,7 @@
     </form>
 
     <div class="fixed-action-btn">
-        <a class="btn-floating btn-large red" href="/professor">
+        <a class="btn-floating btn-large red" href="/aluno">
                 <i class="large material-icons">arrow_back</i>
         </a>
     </div>

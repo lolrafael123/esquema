@@ -20,6 +20,59 @@
 </head>
 
 <body id="layout">
+    <!-- preloader -->
+    <div class="preloader-background">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="spinner-layer spinner-red">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+
+            <div class="spinner-layer spinner-yellow">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+
+            <div class="spinner-layer spinner-green">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- fim preloader -->
     <div class="col s12">
         <div class="section indigo darken-4"></div>
     </div>
@@ -55,44 +108,16 @@
 
 
 </body>
+ <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            $('.preloader-background').delay(800).fadeOut('slow');
 
-<!--Import jQuery before materialize.js
-<script type="text/javascript" src="js/materialize.min.js"></script>
-<script type="text/javascript" src="js/app.js"></script>
+            $('.preloader-wrapper')
+                .delay(800)
+                .fadeOut();
+        });
+    </script>
 
-<!--Import jQuery before materialize.js
-<script>
-    $('.fixed-action-btn').openFAB();
-    $('.fixed-action-btn').closeFAB();
-    $('.fixed-action-btn.toolbar').openToolbar();
-    $('.fixed-action-btn.toolbar').closeToolbar();
-</script>
-
-
-<script>
-    $('.dropdown-button').dropdown('open');
-    $('.dropdown-button').dropdown('close');
-</script>
-
-<script>
-    $(document).ready(function () {
-        $('select').material_select();
-    });
-</script>
-
-
-
-<script>
-    $('.datepicker').pickadate({
-        selectMonths: true, // Creates a dropdown to control month
-        selectYears: 15, // Creates a dropdown of 15 years to control year,
-        today: 'Today',
-        clear: 'Clear',
-        close: 'Ok',
-        closeOnSelect: false // Close upon selecting a date,
-    });
-</script>
--->
 
 <script>
         $(document).ready(function () {

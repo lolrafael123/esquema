@@ -1,4 +1,8 @@
-@extends('layouts.layoutaluno') @section('title', 'Aluno') @section('nav')
+@extends('layouts.layoutaluno') 
+
+@section('title', 'Aluno') 
+
+@section('nav')
 <div class="row">
 
     <ul class="side-nav fixed hoverable indigo darken-3">
@@ -13,7 +17,7 @@
 
                         <!-- Dropdown Structure -->
                         <ul id='dropdown1' class='dropdown-content'>
-                            <li><a href="#"><i class="material-icons indigo-text text-darken-4">face</i> Perfil</a>
+                            <li><a href="/formaluno"><i class="material-icons indigo-text text-darken-4">face</i> Perfil</a>
                             </li>
                             <li><a href="#"><i class="material-icons indigo-text text-darken-4">keyboard_tab</i> Sair</a>
                             </li>
@@ -53,7 +57,9 @@
                 </form>
             </div>
 
-            @endsection @section('content')
+            @endsection 
+            
+            @section('content')
             <table class="striped bordered ">
                 <thead>
                     <tr class="white">
@@ -114,12 +120,18 @@
 
             <!-- Modal Structure-->
             <div id="modal2" class="modal bottom-sheet">
-                <div class="modal-content">
-                    <h4>Modal Header</h4>
-                    <p>A bunch of text</p>
-                </div>
                 <div class="modal-footer">
-                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+                    <div class="input-field col s4">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Código da prova</label>
+                    </div>    
+                    <div class="input-field col s4">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Resposta secreta</label>
+                    </div>  
+                    
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn indigo col s2">Agree</a>
+            
                 </div>
             </div>
 

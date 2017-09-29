@@ -1,4 +1,6 @@
-@extends('layouts.layoutprofessor') @section('nav')
+@extends('layouts.layoutprofessor')
+
+@section('nav')
 <div class="row">
 
     <ul class="side-nav fixed hoverable indigo darken-3">
@@ -32,20 +34,28 @@
                     <center>
                         <h4 class="white-text">Nova Prova</h4>
                     </center>
-                    <p class="white-text">Data:<input type="date"></p>
-                    <div class="input-field white-text">
+                    <p class="white-text col s12">Data:<input type="date"></p>
+                    <div class="input-field col s12 white-text">
                         <input id="" type="text">
                         <label for="">Título</label>
                     </div>
-                    <div class="input-field white-text">
-                        <input id="" type="text">
-                        <label for="">Sala</label>
+                   <div class="input-field col s12 grey-text">
+                        <select>
+                            <option value="" disabled selected>Sala</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                                
                     </div>
-                    <div class="input-field white-text">
-                        <input id="" type="text">
-                        <label for="">Diciplina</label>
+                    <div class="input-field col s12 grey-text">
+                        <select>
+                            <option value="" disabled selected>Diciplina</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
                     </div>
-
                     <a class="waves-effect waves-light btn red">Enviar</a>
                 </form><br>
             </div>

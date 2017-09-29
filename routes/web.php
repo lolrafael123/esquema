@@ -99,3 +99,6 @@ Route::get('professor2', function () {
     return view('partials.professor2');
 });
 
+Route::get('formaluno', function () {
+    return view('partials.alunoform');
+});
