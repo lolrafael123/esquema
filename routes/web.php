@@ -102,3 +102,5 @@ Route::get('professor2', function () {
 Route::get('formaluno', function () {
     return view('partials.alunoform');
 });
+
+Route::post('/enviar','ContatoController@enviaContato');
