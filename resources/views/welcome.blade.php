@@ -146,42 +146,46 @@
     <div class="section  red darken-4 section scrollspy" id="Projeto">
         <div class="container">
             <div class="row">
-                <div class="col s12 m4 l2">
+                <div class="col s3">
                     <div class="container">
-                        <i class="white-text medium material-icons">assignment_turned_in</i></div>
-                    <p align="justify" class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ante efficitur, interdum lacus id,
-                        commodo sapien.</p>
+                        <i class="white-text medium material-icons">watch_later</i></div>
+                    <p align="justify" class="white-text">Aqui em nosso website seu tempo também é valorizado!</p>
                 </div>
                 <div class="col s12 m4 l8">
                     <video class="materialboxed container" width="650" controls>
-                        <source src="media/vídeos/temer.mp4" type="video/mp4">
+                        <source src="vídeos/temer.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="col s12 m4 l2">
+                <div class="col s3">
                     <div class="container">
-                        <i class="white-text medium material-icons  ">assignment_turned_in</i></div>
-                    <p align="justify" class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ante efficitur, interdum lacus id,
-                        commodo sapien.</p>
+                        <i class="white-text medium material-icons  ">monetization_on</i></div>
+                    <p align="justify" class="white-text">Poupamos o gasto das impressões de provas, economizando para investir em outros setores da instituição!</p>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col s4">
+                <div class="col s3">
                     <div class="container">
-                        <i class="white-text medium material-icons">assignment_turned_in</i></div>
+                        <i class="white-text medium material-icons">local_library</i></div>
                     <p align="justify" class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ante efficitur, interdum lacus id,
                         commodo sapien.</p>
                 </div>
-                <div class="col s4">
+                <div class="col s3">
                     <div class="container">
-                        <i class="white-text medium material-icons ">assignment_turned_in</i></div>
+                        <i class="white-text medium material-icons ">help</i></div>
                     <p align="justify" class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ante efficitur, interdum lacus id,
                         commodo sapien.</p>
                 </div>
-                <div class="col s4">
+                <div class="col s3">
                     <div class="container">
-                        <i class="white-text medium material-icons ">assignment_turned_in</i></div>
+                        <i class="white-text medium material-icons ">flight_takeoff</i></div>
+                    <p align="justify" class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ante efficitur, interdum lacus id,
+                        commodo sapien.</p>
+                </div>
+                <div class="col s3">
+                    <div class="container">
+                        <i class="white-text medium material-icons ">public</i></div>
                     <p align="justify" class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ante efficitur, interdum lacus id,
                         commodo sapien.</p>
                 </div>
