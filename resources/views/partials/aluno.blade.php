@@ -3,6 +3,7 @@
 @section('title', 'Aluno') 
 
 @section('nav')
+
 <div class="row">
 
     <ul class="side-nav fixed hoverable indigo darken-3">
@@ -10,21 +11,27 @@
             <div class="row">
                 <br>
                 <div class="col s4 m4 l4">
-                    <img src="images/989.jpg" alt="" class="circle responsive-img">
+                    <img src="images/uploads/avatars/{{ Auth::user()->avatar }}" alt="" class="circle responsive-img">
                 </div>
                 <center>
                     <div class="col s12 m8 l8">
 
                         <!-- Dropdown Structure -->
                         <ul id='dropdown1' class='dropdown-content'>
-                            <li><a href="/formaluno"><i class="material-icons indigo-text text-darken-4">face</i> Perfil</a>
+                            <li><a href="/profile"><i class="material-icons indigo-text text-darken-4">face</i> Perfil</a>
                             </li>
-                            <li><a href="#"><i class="material-icons indigo-text text-darken-4">keyboard_tab</i> Sair</a>
+                            <li><a href="{{ route('logout') }}"
+                                        onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();"><i class="material-icons indigo-text text-darken-4">keyboard_tab</i> Sair</a>
+                                
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                        {{ csrf_field() }}
+                                    </form>
                             </li>
 
                         </ul>
                         <!-- Dropdown Trigger -->
-                        <a class='dropdown-button btn red col s12' href='#' data-activates='dropdown1'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRafael<i class="material-icons right">arrow_drop_down</i></a>
+                        <a class='dropdown-button btn red col s12' href='#' data-activates='dropdown1'> {{ Auth::user()->name }}<i class="material-icons right">arrow_drop_down</i></a>
 
                         <p class="white-text">Aluno</p>
                     </div>

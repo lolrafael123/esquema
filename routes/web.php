@@ -5,102 +5,63 @@
 | Web Routes
 |--------------------------------------------------------------------------
 |
-| This file is where you may define all of the routes that are handled
-| by your application. Just tell Laravel the URIs it should respond
-| to using a Closure or controller method. Build something great!
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::get('/home', function () {
+    return view('home');
 });
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index');
-Route::get('/about', 'AboutController@index');
-
-
-
-/*
- * Articles routes
- */
-//Route::get('articles', 'ArticlesController@index');
-//Route::get('articles/create', 'ArticlesController@create');
-//Route::get('articles/{id}', 'ArticlesController@show');
-//Route::post('articles', 'ArticlesController@store');
-//Route::get('articles/{id}/edit', 'ArticlesController@edit');
-//Route::patch('articles/{id}', 'ArticlesController@update');
-//Route::delete('articles/{id}', 'ArticlesController@destroy');
-
-Route::resource('articles', 'ArticlesController');
-
-
-
-/*
- * Datatables routes
- */
-Route::get('datatable', 'ArticlesDTController@index');
-//Route::get('datatable/ajaxdata', 'ArticlesDTController@getBasicData'); // getBasicData, AddEditRemoveColumn
-Route::get('datatable/ajaxdata', 'ArticlesDTController@AddEditRemoveColumn');
-
-
-/*
- * Datatables routes as Service
- */
-Route::resource('datatable2', 'ArticlesDTSController');
-
-
-/*
- * Profile routes
- */
-Route::get('profile', 'ProfileController@profile');
-Route::get('password', 'ProfileController@password');
-Route::patch('profile', 'ProfileController@update');
-Route::patch('profile/change_password', 'ProfileController@change_password');
-
-
-/*
- * Settings routes
- */
-Route::get('settings', 'SettingsController@index');
-
-
-/*
- * Users routes
- */
-Route::get('users', 'UsersController@index');
-Route::get('users/create', 'UsersController@create');
-Route::get('users/{id}', 'UsersController@show');
-Route::post('users', 'UsersController@store');
-Route::get('users/{id}/edit', 'UsersController@edit');
-
-Route::patch('users/{id}', 'UsersController@update');
-
-Route::delete('users/{id}', 'UsersController@destroy');
-
-
-Route::get('users/{id}/reset_password', 'UsersController@reset_password');
-Route::patch('users/{id}/reset_password', 'UsersController@update_password');
-
-Route::get('professor', function () {
-    return view('partials.professor');
+Route::get('/', function () {
+   return view('auth/login');
+     
 });
 
-Route::get('aluno', function () {
-    return view('partials.aluno');
-});
 
-Route::get('formprof', function () {
-    return view('partials.professorform');
-});
-
-Route::get('professor2', function () {
-    return view('partials.professor2');
-});
-
-Route::get('formaluno', function () {
-    return view('partials.alunoform');
+Route::get('/', 'PostController@index');
+Route::get('/posts', 'PostController@index')->name('list_posts');
+Route::group(['prefix' => 'posts'], function () {
+    Route::get('/drafts', 'PostController@drafts')
+        ->name('list_drafts')
+        ->middleware('auth');
+    Route::get('/show/{id}', 'PostController@show')
+        ->name('show_post');
+    Route::get('/create', 'PostController@create')
+        ->name('create_post')
+        ->middleware('can:create-post');
+    Route::post('/create', 'PostController@store')
+        ->name('store_post')
+        ->middleware('can:create-post');
+    Route::get('/edit/{post}', 'PostController@edit')
+        ->name('edit_post')
+        ->middleware('can:update-post,post');
+    Route::post('/edit/{post}', 'PostController@update')
+        ->name('update_post')
+        ->middleware('can:update-post,post');
+    // using get to simplify
+    Route::get('/publish/{post}', 'PostController@publish')
+        ->name('publish_post')
+        ->middleware('can:publish-post');
 });
 
 Route::post('/enviar','ContatoController@enviaContato');
+
+
+Route::get('/formaluno', function () {
+    return view('partials.alunoform');
+});
+
+Route::get('/profile','UserController@profile');
+
+Route::post('profile', 'UserController@update_avatar');
+
+Route::get('/aluno','UserController@profile');
+
+Route::get('/al', function () {
+    return view('partials.aluno');
+});

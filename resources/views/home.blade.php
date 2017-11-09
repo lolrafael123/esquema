@@ -6,12 +6,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Compiled and minified CSS -->
-    <link type="text/css" rel="stylesheet" href="../../public/css/materialize.min.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="../../public/css/style.css" />
-    <link type="text/css" rel="stylesheet" href="../../public/css/font-awesome.css" />
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="{{asset('css/materialize.min.css')}}" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="{{asset('css/style.css')}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset('css/font-awesome.css')}}" />
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -76,21 +77,21 @@
         <nav class="transparent z-depth-0 nav" id="navbar">
             <div class="nav-wrapper">
                 <a href="#login" class="brand-logo">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                 <img src="../../public/images/logo.png">
+                 <img src="images/logo.png">
             </a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="#Projeto">Projeto</a></li>
                     <li><a href="#Sobre">Sobre nós</a></li>
                     <li><a href="#Contato">Contato</a></li>
-                    <li><a href="register.blade.php" class="waves-effect waves-light btn red hoverable">Registrar-se</a></li>
+                    <li><a href="register" class="waves-effect waves-light btn red hoverable">Registrar-se</a></li>
                 </ul>
             </div>
             <ul class="side-nav" id="mobile-demo">
                 <li><a href="#Projeto">Projeto</a></li>
                 <li><a href="#Sobre">Sobre nós</a></li>
                 <li><a href="#Contato">Contato</a></li>
-                <li><a href="register.blade.php" class="waves-effect waves-light btn red hoverable">Registrar-se</a></li>
+                <li><a href="register" class="waves-effect waves-light btn red hoverable">Registrar-se</a></li>
             </ul>
         </nav>
     </div>
@@ -107,22 +108,23 @@
 
                         </div>
                         <div class="col l5 offset-l1 m12">
-                            <div class="card hoverable top-md animated_delay_1">
+                            <div class="card hoverable top-md">
                                 <div class="card-content card-spaced">
                                     <h3 class="center">Login</h3>
                                     <div class="row top-md">
-                                        <form class="col s12">
+                                        <form class="col s12" role="form" method="POST" action="{{ url('/login') }}">
+                                        {{ csrf_field() }}
                                             <div class=row>
-                                                <div class="input-field col m4 l8"> <input class=validate type=text>
-                                                    <label for=first_name>Username <i class="material-icons right">account_circle</i></label>
+                                                <div class="input-field col m4 l8"> <input class="validate" type="text" required>
+                                                    <label for="first_name">Username <i class="material-icons right">account_circle</i></label>
 
                                                 </div>
                                                 <div class=row>
-                                                    <div class="input-field col m4 l8"> <input class=validate type="password">
-                                                        <label for=email>Senha <i class="material-icons right">fingerprint</i></label>
+                                                    <div class="input-field col m4 l8"> <input class="validate" type="password" required>
+                                                        <label for="email">Senha <i class="material-icons right">fingerprint</i></label>
                                                     </div>
                                                 </div> <button class="btn btn-large btn-block blue waves-effect waves-light indigo darken-4"
-                                                    name=action type=submit>Entrar <i class="material-icons right">send</i></button>                                                &nbsp
+                                                    name="action" type="submit">Entrar <i class="material-icons right">send</i></button>                                                &nbsp
                                                 <a class="red-text text-red" href="#">Esqueceu a senha?</a>
                                         </form>
                                         </div>
@@ -135,7 +137,24 @@
                 <!-- fim da parte de login -->
                 <div class="parallax"><img src="../../public/images/logo2.jpg"></div>
             </div>
+ <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
 
+                                <ul class="dropdown-menu" role="menu">
+                                    
+                                    
+                                        <a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Sair
+                                        </a>
+                                       
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
     </main>
     <!-- Fim Parallax e login -->
 
@@ -145,42 +164,46 @@
     <div class="section  red darken-4 section scrollspy" id="Projeto">
         <div class="container">
             <div class="row">
-                <div class="col s12 m4 l2">
+                <div class="col s3">
                     <div class="container">
-                        <i class="white-text medium material-icons">assignment_turned_in</i></div>
-                    <p align="justify" class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ante efficitur, interdum lacus id,
-                        commodo sapien.</p>
+                        <i class="white-text medium material-icons">watch_later</i></div>
+                    <p align="justify" class="white-text">Aqui em nosso website seu tempo também é valorizado!</p>
                 </div>
                 <div class="col s12 m4 l8">
                     <video class="materialboxed container" width="650" controls>
-                        <source src="../../public/media/vídeos/temer.mp4" type="video/mp4">
+                        <source src="vídeos/temer.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="col s12 m4 l2">
+                <div class="col s3">
                     <div class="container">
-                        <i class="white-text medium material-icons  ">assignment_turned_in</i></div>
-                    <p align="justify" class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ante efficitur, interdum lacus id,
-                        commodo sapien.</p>
+                        <i class="white-text medium material-icons  ">monetization_on</i></div>
+                    <p align="justify" class="white-text">Poupamos o gasto das impressões de provas, economizando para investir em outros setores da instituição!</p>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col s4">
+                <div class="col s3">
                     <div class="container">
-                        <i class="white-text medium material-icons">assignment_turned_in</i></div>
+                        <i class="white-text medium material-icons">local_library</i></div>
                     <p align="justify" class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ante efficitur, interdum lacus id,
                         commodo sapien.</p>
                 </div>
-                <div class="col s4">
+                <div class="col s3">
                     <div class="container">
-                        <i class="white-text medium material-icons ">assignment_turned_in</i></div>
+                        <i class="white-text medium material-icons ">help</i></div>
                     <p align="justify" class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ante efficitur, interdum lacus id,
                         commodo sapien.</p>
                 </div>
-                <div class="col s4">
+                <div class="col s3">
                     <div class="container">
-                        <i class="white-text medium material-icons ">assignment_turned_in</i></div>
+                        <i class="white-text medium material-icons ">flight_takeoff</i></div>
+                    <p align="justify" class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ante efficitur, interdum lacus id,
+                        commodo sapien.</p>
+                </div>
+                <div class="col s3">
+                    <div class="container">
+                        <i class="white-text medium material-icons ">public</i></div>
                     <p align="justify" class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet ante efficitur, interdum lacus id,
                         commodo sapien.</p>
                 </div>
@@ -194,7 +217,7 @@
 
     <!-- parallax 2 -->
     <div class="parallax-container">
-        <div class="parallax"><img src="../../public/images/pexe4.jpg"></div>
+        <div class="parallax"><img src="images/pexe4.jpg"></div>
     </div>
     <!-- fim do parallax 2 -->
 
@@ -217,7 +240,7 @@
                     <div class="col s4">
                         <div class="card hoverable">
                             <div class="card-image">
-                                <img src="../../public/images/989.jpg">
+                                <img src="images/989.jpg">
                                 <span <a class="btn-floating btn-large halfway-fab red activator"><i class="material-icons">add</i></a></span>
                             </div>
                             <div class="card-content">
@@ -256,7 +279,7 @@
                     <div class="col s4">
                         <div class="card hoverable">
                             <div class="card-image">
-                                <img src="../../public/images/989.jpg">
+                                <img src="images/989.jpg">
                                 <span <a class="btn-floating btn-large halfway-fab red activator"><i class="material-icons">add</i></a></span>
                             </div>
                             <div class="card-content">
@@ -294,7 +317,7 @@
                     <div class="col s4">
                         <div class="card hoverable">
                             <div class="card-image">
-                                <img src="../../public/images/989.jpg">
+                                <img src="images/989.jpg">
                                 <span <a class="btn-floating btn-large halfway-fab red activator"><i class="material-icons">add</i></a></span>
                             </div>
                             <div class="card-content">
@@ -336,7 +359,7 @@
                     <div class="col s4">
                         <div class="card hoverable">
                             <div class="card-image">
-                                <img src="../../public/images/989.jpg">
+                                <img src="images/989.jpg">
                                 <span <a class="btn-floating btn-large halfway-fab red activator"><i class="material-icons">add</i></a></span>
                             </div>
                             <div class="card-content">
@@ -375,7 +398,7 @@
                     <div class="col s4">
                         <div class="card hoverable">
                             <div class="card-image">
-                                <img src="../../public/images/989.jpg">
+                                <img src="images/989.jpg">
                                 <span <a class="btn-floating btn-large halfway-fab red activator"><i class="material-icons">add</i></a></span>
                             </div>
                             <div class="card-content">
@@ -413,7 +436,7 @@
                     <div class="col s4">
                         <div class="card hoverable">
                             <div class="card-image">
-                                <img src="../../public/images/989.jpg">
+                                <img src="images/989.jpg">
                                 <span <a class="btn-floating btn-large halfway-fab red activator"><i class="material-icons">add</i></a></span>
                             </div>
                             <div class="card-content">
@@ -456,7 +479,7 @@
                     <div class="col s4">
                         <div class="card hoverable">
                             <div class="card-image">
-                                <img src="../../public/images/989.jpg">
+                                <img src="images/989.jpg">
                                 <span <a class="btn-floating btn-large halfway-fab red activator"><i class="material-icons">add</i></a></span>
                             </div>
                             <div class="card-content">
@@ -494,7 +517,7 @@
                     <div class="col s4">
                         <div class="card hoverable">
                             <div class="card-image">
-                                <img src="../../public/images/989.jpg">
+                                <img src="images/989.jpg">
                                 <span <a class="btn-floating btn-large halfway-fab red activator"><i class="material-icons">add</i></a></span>
                             </div>
                             <div class="card-content">
@@ -540,13 +563,14 @@
 
     <!-- parallax 3 -->
     <div class="parallax-container">
-        <div class="parallax"><img src="../../public/images/pexe5.jpg"></div>
+        <div class="parallax"><img src="images/pexe5.jpg"></div>
     </div>
 
     <!-- fim parallax 3-->
 
     <!-- contato -->
-    <form>
+    <form action="/enviar" method="post">
+    {{ csrf_field() }}
         <div class="section indigo darken-4 section scrollspy" id="Contato">
             <div class="container">
                 <div class="row">
@@ -556,21 +580,21 @@
                     <div class="col s6">
                         <div class="row">
                             <div class="input-field col s6 white-text">
-                                <input id="" type="text" class="validate">
+                                <input id="" type="text" class="validate" name="nome" required>
                                 <label for="">Nome</label>
                             </div>
                             <div class="input-field col s6 white-text">
-                                <input id="" type="text" class="validate">
+                                <input id="" type="text" class="validate" name="sobrenome" required>
                                 <label for="">Sobrenome</label>
                             </div>
                             <div class="row">
                                 <div class="col s6">
                                     <div class="input-field col s12 grey-text">
-                                        <select>
+                                        <select name="assunto" required>
                                   <option value="" disabled selected>Assunto</option>
-                                  <option value="1">Option 1</option>
-                                  <option value="2">Option 2</option>
-                                  <option value="3">Option 3</option>
+                                  <option value="Reclamação">Reclamação</option>
+                                  <option value="Crítica">Crítica</option>
+                                  <option value="Dúvida">Dúvida</option>
                                 </select>
 
                                     </div>
@@ -583,7 +607,7 @@
 
                 <div class="row">
                     <div class="input-field col s6 white-text">
-                        <input id="email" type="email" class="validate">
+                        <input id="email" type="email" class="validate" name="email" required>
                         <label for="email" data-error="Incorreto!" data-success="Certo!">Email</label>
                     </div>
                 </div>
@@ -592,9 +616,9 @@
 
                 <div class="row">
                     <div class="input-field col s6">
-                        <textarea id="textarea1" class="materialize-textarea white-text validate"></textarea>
+                        <textarea id="textarea1" class="materialize-textarea white-text validate" name="mensagem" required></textarea>
                         <label for="textarea1">Mensagem</label><br>
-                        <a class="red darken-4 btn-large waves-effect waves-light btn">Enviar</a>
+                        <button class="red darken-4 btn-large waves-effect waves-light btn" type="submit">Enviar</button>
                     </div>
                 </div>
             </div>
@@ -643,8 +667,8 @@
     <!-- fim do rodapé-->
 
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="../../js/materialize.min.js"></script>
-    <script type="text/javascript" src="../../js/app.js"></script>
+    
+
 
     <!-- script do parallax -->
     <script>

@@ -31,6 +31,9 @@ class UpdatePostRequest extends FormRequest
                 Rule::unique('posts')->where('id', '<>', $id),
             ],
             'body' => 'required',
+            'data' => 'required',
+            'sala' => 'required',
+            'disciplina' => 'required',
         ];
     }
 }

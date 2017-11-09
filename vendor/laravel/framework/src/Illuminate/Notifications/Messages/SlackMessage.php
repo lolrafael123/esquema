@@ -7,7 +7,7 @@ use Closure;
 class SlackMessage
 {
     /**
-     * The "level" of the notification (info, success, error).
+     * The "level" of the notification (info, success, warning, error).
      *
      * @var string
      */
@@ -21,11 +21,18 @@ class SlackMessage
     public $username;
 
     /**
-     * The user icon for the message.
+     * The user emoji icon for the message.
      *
      * @var string|null
      */
     public $icon;
+
+    /**
+     * The user image icon for the message.
+     *
+     * @var string|null
+     */
+    public $image;
 
     /**
      * The channel to send the message on.
@@ -40,6 +47,13 @@ class SlackMessage
      * @var string
      */
     public $content;
+
+    /**
+     * Indicates if channel names and usernames should be linked.
+     *
+     * @var bool
+     */
+    public $linkNames = 0;
 
     /**
      * The message's attachments.
@@ -68,6 +82,18 @@ class SlackMessage
     }
 
     /**
+     * Indicate that the notification gives information about a warning.
+     *
+     * @return $this
+     */
+    public function warning()
+    {
+        $this->level = 'warning';
+
+        return $this;
+    }
+
+    /**
      * Indicate that the notification gives information about an error.
      *
      * @return $this
@@ -80,7 +106,7 @@ class SlackMessage
     }
 
     /**
-     * Set a custom user icon for the Slack message.
+     * Set a custom username and optional emoji icon for the Slack message.
      *
      * @param  string  $username
      * @param  string|null  $icon
@@ -93,6 +119,19 @@ class SlackMessage
         if (! is_null($icon)) {
             $this->icon = $icon;
         }
+
+        return $this;
+    }
+
+    /**
+     * Set a custom image icon the message should use.
+     *
+     * @param  string $channel
+     * @return $this
+     */
+    public function image($image)
+    {
+        $this->image = $image;
 
         return $this;
     }
@@ -147,10 +186,24 @@ class SlackMessage
     {
         switch ($this->level) {
             case 'success':
-                return '#7CD197';
+                return 'good';
             case 'error':
-                return '#F35A00';
+                return 'danger';
+            case 'warning':
+                return 'warning';
         }
+    }
+
+    /**
+     * Find and link channel names and usernames.
+     *
+     * @return $this
+     */
+    public function linkNames()
+    {
+        $this->linkNames = 1;
+
+        return $this;
     }
 
     /**

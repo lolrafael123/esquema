@@ -19,16 +19,16 @@ class PostController extends Controller
 
 	public function create()
 	{
-	    return view('posts.create');
+		return view('posts.create');
 	}
 
 	public function store(StorePostRequest $request)
 	{
-	    $data = $request->only('title', 'body');
+	    $data = $request->only('title', 'data', 'sala', 'disciplina');
 	    $data['slug'] = str_slug($data['title']);
 	    $data['user_id'] = Auth::user()->id;
 	    $post = Post::create($data);
-	    return redirect()->route('edit_post', ['id' => $post->id]);
+	    return redirect()->route('list_drafts');
 	}
 
 	public function drafts()
@@ -48,7 +48,7 @@ class PostController extends Controller
 
 	public function update(Post $post, UpdatePostRequest $request)
 	{
-	    $data = $request->only('title', 'body');
+	    $data = $request->only('title', 'data', 'sala', 'disciplina');
 	    $data['slug'] = str_slug($data['title']);
 	    $post->fill($data)->save();
 	    return back();
