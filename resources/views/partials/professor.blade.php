@@ -55,8 +55,13 @@
                         </select>
                                 
                     </div>
+                    <div class="input-field col s12 white-text">
+                        <input id="" type="text">
+                        <label for="">Código</label>
+                    </div>
 
-                    <a class="waves-effect waves-light btn red">Enviar</a>
+                    <button class="waves-effect waves-light btn red" type="submit">Enviar</button>
+                    <button class="waves-effect waves-light btn green" type="submit">Gerar</button>
                 </form><br>
             </div>
             <div class="col s12 z-depth-5">

@@ -116,15 +116,15 @@
                                         {{ csrf_field() }}
                                             <div class=row>
                                                 <div class="input-field col m4 l8"> <input class="validate" type="text" required>
-                                                    <label for="first_name">Username <i class="material-icons right">account_circle</i></label>
+                                                    <label>Username <i class="material-icons right">account_circle</i></label>
 
                                                 </div>
                                                 <div class=row>
                                                     <div class="input-field col m4 l8"> <input class="validate" type="password" required>
-                                                        <label for="email">Senha <i class="material-icons right">fingerprint</i></label>
+                                                        <label>Senha <i class="material-icons right">fingerprint</i></label>
                                                     </div>
                                                 </div> <button class="btn btn-large btn-block blue waves-effect waves-light indigo darken-4"
-                                                    name="action" type="submit">Entrar <i class="material-icons right">send</i></button>                                                &nbsp
+                                                    type="submit">Entrar <i class="material-icons right">send</i></button>                                                &nbsp
                                                 <a class="red-text text-red" href="#">Esqueceu a senha?</a>
                                         </form>
                                         </div>

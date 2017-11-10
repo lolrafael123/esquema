@@ -65,3 +65,7 @@ Route::get('/aluno','UserController@profile');
 Route::get('/al', function () {
     return view('partials.aluno');
 });
+
+Route::get('/professor', function () {
+    return view('partials.professor');
+});
